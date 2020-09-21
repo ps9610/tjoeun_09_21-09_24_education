@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+#wrapper{width: 1200px; height: 700px; background: #fff; margin: 0 auto;}
+
+#wrapper #header{width: 1200px; }
+#wrapper #header .header-left{float:left; width: 180px; height: 100px; background: #172B27;}
+#wrapper #header .header-right{float:left; width: 1020px; height: 100px; background: #673C37;}
+
+#wrapper #main{width: 1200px; height: 500px;}
+#wrapper #main #section1{width: 1200px; height: 250px; background:#fcfaf2;} 
+#wrapper #main #section2{width: 1200px; height: 250px; }
+#wrapper #main #section2 .section2-left{float:left; width: 400px; height: 250px; background:#4B0F00;}
+#wrapper #main #section2 .section2-center{float:left; width: 400px; height: 250px; background:#7B0F00;}
+#wrapper #main #section2 .section2-right{float:left; width: 400px; height: 250px; background:#4F5F00;}
+
+#wrapper #footer{width: 1200px; height: 100px; }
+#wrapper #footer .footer-left {float:left; width: 180px; height: 100px; background: #ABC0B3;}
+#wrapper #footer .footer-right {float: left; width: 1020px;}
+#wrapper #footer .footer-right-row1{width: 1020px; height: 50px; background: #EFD8B3;}
+#wrapper #footer .footer-right-row2{width: 1020px; height: 50px; background: #EAC0B3;}

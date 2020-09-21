@@ -1,0 +1,8 @@
+@charset "UTF-8";
+* {margin: 0; padding:0;}
+html, body {width: 100%; height: 100%;}
+body {background-color: #fff;}
+.fixedclear:after {content:""; display: block; clear:both;} 
+/* 부모태그에 float 풀기 : 
+해당태그 다음(가상클래스 after/ before면 그 전 태그들)부터 적용 (header에 float 적용시켰으니까 header다음부터)*/
+.hide {display: none;}

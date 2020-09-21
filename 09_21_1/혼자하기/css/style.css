@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+#wrapper {width: 1200px; height: 700px; margin: 0 auto;}
+
+#wrapper #header{width: 1200px; height: 100px; background: #CF7500;}
+
+#wrapper #main{width: 1200px; height: 500px;}
+#wrapper #main #section1 {width: 1200px; height: 300px; background: #F0A500;}
+#wrapper #main #section2 {width: 1200px; height: 200px; background: #CF7500;}
+
+#wrapper #footer{width: 1200px; height: 100px; background: #1A1C20;}
