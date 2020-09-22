@@ -2,17 +2,27 @@
 <html lang="ko">
 <head>
     <title>웹표준 웹접근성 크로스브라우징 특수크로스브라우징</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- 브라우저 모드 : 쿼크모드(IE edge로 브라우저를 설정하겠다.
-    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIEedge"> -->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author-date" content="2020-09-22"> 
+    <meta name="Author" content="Park-Sohye">
+    <meta name="Copyright" content="Park-Sohye">
+    <meta name="Keywords" content="웹표준, 웹접근성, 크로스브라우징, 특수크로스브라우징">
+    <meta name="description" content="A web document structure that creates Web standards, web accessibility, and cross-browsing.(웹 표준, 웹 접근성, 크로스 브라우징을 제작하는 웹 문서 구조입니다.)">
+    <meta name="Robots" content="index, follow">
+    
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/common.css">
+    
     <script src="./js/lib/jquery-1.12.4.min.js"></script>
-    <!-- 오픈소스 사용 -->
-    <!-- script src 뒤에 type=""이 기본이지만 요즘은 잘 안씀 -->
-
+    <script src="./js/lib/prefixfree.min.js"></script>
+    <script src="./js/lib/jquery.easing.1.3.js"></script>
+    <script src="./js/lib/jquery.touchSwipe.js"></script>
+    <!-- 오픈소스 사용
+         script src 뒤에 type=""이 기본이지만 요즘은 잘 안씀 -->
+    
+<!--조건 주석문-->
     <!--[if lte IE 9]>
         <script src="./js/lib/IE9.js"></script>
     <![endif]-->
@@ -31,7 +41,7 @@
             <link rel="stylesheet" type="text/css" href="ie8.css">
     <![endif]-->
 
-    <!--[if lte IE 8]>
+    <!--[if lte IE 7]>
         <link rel="stylesheet" type="text/css" href="ie7.css"
     <![endif]-->
 
@@ -40,22 +50,97 @@
 
 <body>
 <div id="wrap">
-<!-- header -->
-    <header id="header">
 
+<!-- header -->
+<header id="header">
+    <div class="left">
+        
+    </div>
+    <div class="right">
+        <nav id="nav">
+            <ul> <!-- 목록태그, 홈페이지 제작시 가장 많이 씀(div만큼 씀),ul->li(ok) ul->div(x) ul->li->div(o) -->
+                <li> <!-- li는 자식요소로 모든 요소에 대한 제한이 없기 때문에 div가 올 수 있고 아무거나 올 수 있음 -->
+                    <a href="#" class="main-btn" title="MENU-1">MENU-1</a>
+                     <!-- title은 접근성 -->
+                        <div class="sub sub1">
+                            <ul>
+                                <li><a href="#" class="sub-btn" title="SubMenu-1">SubMenu-1</a></li>
+                                <li><a href="#" class="sub-btn" title="SubMenu-2">SubMenu-2</a></li>
+                                <li><a href="#" class="sub-btn" title="SubMenu-3">SubMenu-3</a></li>
+                                <li><a href="#" class="sub-btn" title="SubMenu-4">SubMenu-4</a></li>
+                            </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="main-btn" title="MENU-2">MENU-2</a>
+                    <div class="sub sub2">
+                        <ul>
+                            <li><a href="#" class="sub-btn" title="SubMenu-1">SubMenu-1</a></li>
+                            <li><a href="#" class="sub-btn" title="SubMenu-2">SubMenu-2</a></li>
+                            <li><a href="#" class="sub-btn" title="SubMenu-3">SubMenu-3</a></li>
+                            <li><a href="#" class="sub-btn" title="SubMenu-4">SubMenu-4</a></li>
+                        </ul>
+                </div>
+                </li>
+                <li>
+                    <a href="#" class="main-btn" title="MENU-3">MENU-3</a>
+                    <div class="sub sub3">
+                        <ul>
+                            <li><a href="#" class="sub-btn" title="SubMenu-1">SubMenu-1</a></li>
+                            <li><a href="#" class="sub-btn" title="SubMenu-2">SubMenu-2</a></li>
+                            <li><a href="#" class="sub-btn" title="SubMenu-3">SubMenu-3</a></li>
+                            <li><a href="#" class="sub-btn" title="SubMenu-4">SubMenu-4</a></li>
+                        </ul>
+                </div>
+                </li>
+                <li>
+                    <a href="#" class="main-btn" title="MENU-4">MENU-4</a>
+                    <div class="sub sub4">
+                        <ul>
+                            <li><a href="#" class="sub-btn" title="SubMenu-1">SubMenu-1</a></li>
+                            <li><a href="#" class="sub-btn" title="SubMenu-2">SubMenu-2</a></li>
+                            <li><a href="#" class="sub-btn" title="SubMenu-3">SubMenu-3</a></li>
+                            <li><a href="#" class="sub-btn" title="SubMenu-4">SubMenu-4</a></li>
+                        </ul>
+                </div>
+                </li>
+            </ul>
+        </nav>
+        </div>
     </header>
-<!-- main -->
+
+    <!-- main -->
     <main id="main">
         <section id="section1">
-
+            <h2 class="hide">hide</h2>
+            
         </section>
         <section id="section2">
-
+            <h2 class="hide">hide</h2>
+            <div class="left">
+                
+            </div>
+            <div class="center">
+                
+            </div>
+            <div class="right">
+            </div>
         </section>
     </main>
+
 <!-- footer -->
     <footer id="footer">
+        <div class="left">
 
+        </div>
+        <div class="right">
+            <div class="row1">
+
+            </div>
+            <div class="row2">
+
+            </div>
+        </div>
     </footer>
 
 </div>

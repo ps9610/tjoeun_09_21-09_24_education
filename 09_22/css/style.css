@@ -1,14 +1,44 @@
 @charset "UTF-8";
-/* 774936 8a5a44 9d6b53 b07d62 c38e70 cd9777 d69f7e deab90 e6b8a2 edc4b3 */
 #wrap {width: 1200px; margin:0 auto;}
 
 /* header */
-#wrap #header {width: 100%; height: 100px; background:#774936;}
+#wrap #header {width: 100%; }
+#wrap #header:after {content:""; display: block; clear:both;}
+#wrap #header .left {float:left; width: 180px; height: 100px; background:#daa;}
+
+/* 네비게이션 Nevigation 영역 */
+#wrap #header .right {float:left; width: 1020px; height: 100px; background:#aad;}
+#wrap #header .right #nav {padding: 27.5px 27.5px 0 0;}
+#wrap #header .right #nav::after {content: ""; display: block; clear: both;}
+#wrap #header .right #nav > ul {float: right;} /* nav 바로 밑에 ul만을 택한다.=nav의 자식만(자손포함안됨) (클래스도 아이디도 없는 경우) */
+#wrap #header .right #nav > ul:after {content: ""; display: block; clear: both;} /* nav 바로 밑에 ul만을 택한다.=nav의 자식만(자손포함안됨) (클래스도 아이디도 없는 경우) */
+#wrap #header .right #nav > ul > li {float: left; width: 170px; text-align: center;}
+
+/* 메인메뉴 GNB*/
+#wrap #header .right #nav > ul > li .main-btn {display:block; background: #fff; width: 100%; line-height: 45px; 
+    transition: all .3s;} /* transition  타임을 지정해줌 all 칼라,시간 둘다  */
+#wrap #header .right #nav > ul > li .main-btn:hover {background: #000; color: #fff;}
+
+/* 서브메뉴 LNB*/
+#wrap #header .right #nav > ul > li .sub {}
+#wrap #header .right #nav > ul > li .sub ul {}
+#wrap #header .right #nav > ul > li .sub ul li {}
+#wrap #header .right #nav > ul > li .sub ul li a {display: block; line-height: 30px; background: #fff; transition: all .1s;} /* 더이상 자식(자손)이 없어서 태그 따로 안해줌 */
+#wrap #header .right #nav > ul > li .sub ul li a:hover {background: #000; color: #fff;}
 
 /* main */
 #wrap #main {width: 100%;}
-#wrap #main #section1 {width: 100%; height: 300px; background: #8a5a44;}
-#wrap #main #section2 {width: 100%; height: 200px; background: #9d6b53;}
+#wrap #main #section1 {width: 100%; height: 300px; background: #ada;}
+#wrap #main #section2 {width: 100%;}
+#wrap #main #section2:after {content:""; display:block; clear:both;}
+#wrap #main #section2 .left{float:left; width: 400px; height: 200px; background: #bee;}
+#wrap #main #section2 .center{float:left; width: 400px; height: 200px; background: #ebe;}
+#wrap #main #section2 .right{float:left; width: 400px; height: 200px; background: #eeb;}
 
 /* footer */
-#wrap #footer {width: 100%; height: 100px; background: #b07d62;}
+#wrap #footer {width: 100%;}
+#wrap #footer:after {content: ""; display: block; clear: both;} 
+#wrap #footer .left {float:left; width: 180px; height: 100px; background: #c9c;}
+#wrap #footer .right {float:left; width: 1020px;}
+#wrap #footer .right .row1 {width: 100%; height: 50px; background: #dad;}
+#wrap #footer .right .row2 {width: 100%; height: 50px; background: #dda;}
