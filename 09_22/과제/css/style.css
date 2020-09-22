@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+#wrap {width: 1200px; height: 700px; margin: 0 auto;} 
+
+#wrap #header {height: 100px; }
+#wrap #header .header-logo {float:left; width: 200px; height: 100%; background: #6F3B48;}
+
+#wrap #header .header-nav {float:left; width: 1000px; height: 100%; background: #996B61;}
+#wrap #header .header-nav #nav > ul {float:right; width: 680px; height: 45px; background: #fff;}
+#wrap #header .header-nav #nav > ul > li {float:left; width: 25%; height: 100%; text-align: center; line-height: 45px;}
+#wrap #header .header-nav > ul > li .main-btn {}
+
+
+#wrap #main {width: 100%;}
+
+#wrap #main #main-column1 {width: 100%; }
+#wrap #main #main-column1 .main-column1-empty {width: 100%; height: 150px; background: #522632;}
+#wrap #main #main-column1 .main-column1-image {width: 100%; height: 150px; background: #E9EBF1;}
+
+#wrap #main #main-column2 {width: 100%; height: 200px;}
+#wrap #main #main-column2 .main-column2-notice {float:left; width: 33.3%; height: 100%; background: #E5CCC8;}
+#wrap #main #main-column2 .main-column2-gallery {float:left; width: 33.3%; height: 100%; background: #EEDDDC;}
+#wrap #main #main-column2 .main-column2-banner {float:left; width: 33.3%; height: 100%; background: #F2C39C;}
+
+
+#wrap #footer {height: 100px;}
+#wrap #footer .footer-logo {float:left; width: 200px; height: 100%;  background: #F3E4DF;}
+#wrap #footer .footer-copyright {float:left; width: 800px; height: 100%; background: #9D9DB9;}
+#wrap #footer .footer-familysite {float:left; width: 200px; height: 100%; background: #D9C9B4;}
