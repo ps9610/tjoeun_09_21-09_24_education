@@ -59,7 +59,7 @@
     <div class="right">
         <nav id="nav">
             <ul> <!-- 목록태그, 홈페이지 제작시 가장 많이 씀(div만큼 씀),ul->li(ok) ul->div(x) ul->li->div(o) -->
-                <li> <!-- li는 자식요소로 모든 요소에 대한 제한이 없기 때문에 div가 올 수 있고 아무거나 올 수 있음 -->
+                <li tabindex="0"> <!-- li는 자식요소로 모든 요소에 대한 제한이 없기 때문에 div가 올 수 있고 아무거나 올 수 있음 -->
                     <a href="#" class="main-btn" title="MENU-1">MENU-1</a>
                      <!-- title은 접근성 -->
                         <div class="sub sub1">
@@ -71,7 +71,7 @@
                             </ul>
                     </div>
                 </li>
-                <li>
+                <li tabindex="0">
                     <a href="#" class="main-btn" title="MENU-2">MENU-2</a>
                     <div class="sub sub2">
                         <ul>
@@ -82,7 +82,7 @@
                         </ul>
                 </div>
                 </li>
-                <li>
+                <li tabindex="0"> <!--tabindex = 접근성을위해 강제로만들어줌-->
                     <a href="#" class="main-btn" title="MENU-3">MENU-3</a>
                     <div class="sub sub3">
                         <ul>
@@ -93,7 +93,7 @@
                         </ul>
                 </div>
                 </li>
-                <li>
+                <li tabindex="0">
                     <a href="#" class="main-btn" title="MENU-4">MENU-4</a>
                     <div class="sub sub4">
                         <ul>

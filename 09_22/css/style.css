@@ -2,7 +2,7 @@
 #wrap {width: 1200px; margin:0 auto;}
 
 /* header */
-#wrap #header {width: 100%; }
+#wrap #header {z-index:3; position:relative; width: 100%; } /* z-index를 써야되니까 */
 #wrap #header:after {content:""; display: block; clear:both;}
 #wrap #header .left {float:left; width: 180px; height: 100px; background:#daa;}
 
@@ -12,7 +12,7 @@
 #wrap #header .right #nav::after {content: ""; display: block; clear: both;}
 #wrap #header .right #nav > ul {float: right;} /* nav 바로 밑에 ul만을 택한다.=nav의 자식만(자손포함안됨) (클래스도 아이디도 없는 경우) */
 #wrap #header .right #nav > ul:after {content: ""; display: block; clear: both;} /* nav 바로 밑에 ul만을 택한다.=nav의 자식만(자손포함안됨) (클래스도 아이디도 없는 경우) */
-#wrap #header .right #nav > ul > li {float: left; width: 170px; text-align: center;}
+#wrap #header .right #nav > ul > li {position: relative; float: left; width: 170px; text-align: center;}
 
 /* 메인메뉴 GNB*/
 #wrap #header .right #nav > ul > li .main-btn {display:block; background: #fff; width: 100%; line-height: 45px; 
@@ -20,14 +20,17 @@
 #wrap #header .right #nav > ul > li .main-btn:hover {background: #000; color: #fff;}
 
 /* 서브메뉴 LNB*/
-#wrap #header .right #nav > ul > li .sub {}
-#wrap #header .right #nav > ul > li .sub ul {}
-#wrap #header .right #nav > ul > li .sub ul li {}
+#wrap #header .right #nav > ul > li .sub {display: none; position:absolute; top:45px; left:0; width:100%;} 
+/* absolute는 포지션을 찾아감 -> 여기선 relative인 헤더에 붙을것임 ->li position relative해주기 */
+#wrap #header .right #nav > ul > li:hover .sub {display: block;} /* 뒤의 내용은 부모로부터 상속받기 때문에 따로안씀*/
+#wrap #header .right #nav > ul > li:focus .sub {display: block;} /*focus : 키보드가 도달하면 보이게하라*/
+#wrap #header .right #nav > ul > li .sub ul {width: 100%;}
+#wrap #header .right #nav > ul > li .sub ul li {width: 100%;}
 #wrap #header .right #nav > ul > li .sub ul li a {display: block; line-height: 30px; background: #fff; transition: all .1s;} /* 더이상 자식(자손)이 없어서 태그 따로 안해줌 */
 #wrap #header .right #nav > ul > li .sub ul li a:hover {background: #000; color: #fff;}
 
 /* main */
-#wrap #main {width: 100%;}
+#wrap #main {z-index:1; position:relative; width: 100%;}
 #wrap #main #section1 {width: 100%; height: 300px; background: #ada;}
 #wrap #main #section2 {width: 100%;}
 #wrap #main #section2:after {content:""; display:block; clear:both;}
@@ -36,7 +39,7 @@
 #wrap #main #section2 .right{float:left; width: 400px; height: 200px; background: #eeb;}
 
 /* footer */
-#wrap #footer {width: 100%;}
+#wrap #footer {z-index:2; position:relative; width: 100%;}
 #wrap #footer:after {content: ""; display: block; clear: both;} 
 #wrap #footer .left {float:left; width: 180px; height: 100px; background: #c9c;}
 #wrap #footer .right {float:left; width: 1020px;}
