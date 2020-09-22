@@ -1,0 +1,33 @@
+   <!-- 조건 주석문 쓰는 방법
+        1.Exproler IE9 IE8 IE7 polyfill(웹 개발에서 기능을 지원하지 않는 웹 브라우저 상의 기능을 구현하는 코드)
+        2.lte(<=, less than equal) -->
+
+    <!--[if lte IE 9]>
+        <script>
+            alert("익스프롤러 9 이하 버전입니다.")
+        </script>
+    <![endif]-->
+
+    <!--[if lte IE 8]>
+        <script>
+            alert("익스프롤러 8 이하 버전입니다.")
+        </script>
+    <![endif]-->
+
+    <!--[if lte IE 7]>
+        <script>
+            alert("익스프롤러 7 이하 버전입니다.")
+        </script>
+    <![endif]-->
+    
+        <!-- 오픈소스 사용 -->
+    <!-- script src 뒤에 type=""이 기본이지만 요즘은 잘 안씀 -->
+    <!--[if lte IE 8]>
+        <script>
+        //HTML5 시멘틱 태그 요소(Element)들 지원 안 한다. 그래서 시멘틱 태그를 자바스크립트로 만들어서 사용한다.
+        document.createElement("header");       //docu에 header라는 태그요소를 만들어라 = inline요소로 만들어져 넓이와높이를 가질 수 없음
+        document.createElement("main");         //docu에 header라는 태그요소를 만들어라 = inline요소로 만들어져 넓이와높이를 가질 수 없음
+        document.createElement("footer");       //docu에 footer라는 태그요소를 만들어라 = inline요소로 만들어져 넓이와높이를 가질 수 없음
+        document.createElement("section");      //docu에 section라는 태그요소를 만들어라 = inline요소로 만들어져 넓이와높이를 가질 수 없음
+    </script>
+    <![endif]-->

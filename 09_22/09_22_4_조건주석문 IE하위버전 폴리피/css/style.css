@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+#wrap {width: 1200px; height: 700px; margin: 0 auto;}
+
+#wrap #header {width: 100%; height: 100px; background: #ffddd2;}
+
+#wrap #main {width: 100%;}
+#wrap #main #section1 {width: 100%; height: 300px; background: #edf6f9;}
+#wrap #main #section2 {width: 100%; height: 200px; background: #83c5be;}
+
+#wrap #footer  {width: 100%; height: 100px; background: #006d77;}
