@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="./css/common.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     
+    <!-- 오픈소스 -->
     <script src="./js/lib/jquery-1.12.4.min.js"></script>
     <script src="./js/lib/prefixfree.min.js"></script>
     <script src="./js/lib/jquery.easing.1.3.js"></script>
@@ -27,7 +28,10 @@
         document.createElement("main");
         document.createElement("section");
         document.createElement("footer");
+        document.createElement("nav");
+
         </script>
+        <script src="./js/lib/html5shiv.min.js"></script>
         <script src="./css/ie8.css"></script>
     <![endif]-->
 
@@ -45,8 +49,8 @@
             </div>
             
             <div class="header-nav">
-                <nav id="nav">
-                    <ul>
+                <nav id="nav" class="fixedclear">
+                    <ul class="fixedclear">
                         <li><a href="#" class="main-btn">MENU-1</a>
                             <div class="sub sub1">
                                 <ul>
@@ -60,7 +64,7 @@
 
                         <li><a href="#" class="main-btn">MENU-2</a>
                             <div class="sub sub2">
-                                <ul>
+                                <ul class="fixedclear">
                                     <li><a href="#" class="sub-btn" title="sub-menu1">Sub-Menu1</a></li>
                                     <li><a href="#" class="sub-btn" title="sub-menu2">Sub-Menu2</a></li>
                                     <li><a href="#" class="sub-btn" title="sub-menu3">Sub-Menu3</a></li>
@@ -71,7 +75,7 @@
 
                         <li><a href="#" class="main-btn">MENU-3</a>
                             <div class="sub sub3">
-                                <ul>
+                                <ul class="fixedclear">
                                     <li><a href="#" class="sub-btn" title="sub-menu1">Sub-Menu1</a></li>
                                     <li><a href="#" class="sub-btn" title="sub-menu2">Sub-Menu2</a></li>
                                     <li><a href="#" class="sub-btn" title="sub-menu3">Sub-Menu3</a></li>
@@ -82,7 +86,7 @@
 
                         <li><a href="#" class="main-btn">MENU-4</a>
                             <div class="sub sub4">
-                                <ul>
+                                <ul class="fixedclear">
                                     <li><a href="#" class="sub-btn" title="sub-menu1">Sub-Menu1</a></li>
                                     <li><a href="#" class="sub-btn" title="sub-menu2">Sub-Menu2</a></li>
                                     <li><a href="#" class="sub-btn" title="sub-menu3">Sub-Menu3</a></li>

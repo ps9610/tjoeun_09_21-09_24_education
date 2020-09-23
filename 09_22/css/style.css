@@ -18,12 +18,17 @@
 #wrap #header .right #nav > ul > li .main-btn {display:block; background: #fff; width: 100%; line-height: 45px; 
     transition: all .3s;} /* transition  타임을 지정해줌 all 칼라,시간 둘다  */
 #wrap #header .right #nav > ul > li .main-btn:hover {background: #000; color: #fff;}
+#wrap #header .right #nav > ul > li .main-btn:focus {background: #000; color: #fff;}
+/*      제이쿼리 시 사용할 코드(li에다가 안하고 a 링크에 직접 코딩) 
+#wrap #header .right #nav > ul > li .main-btn:hover ~ .sub {display: block;}
+#wrap #header .right #nav > ul > li .main-btn:focus ~ .sub {display: block;} 
+                                                    ~(또는 +) means "next" */
 
 /* 서브메뉴 LNB*/
 #wrap #header .right #nav > ul > li .sub {display: none; position:absolute; top:45px; left:0; width:100%;} 
 /* absolute는 포지션을 찾아감 -> 여기선 relative인 헤더에 붙을것임 ->li position relative해주기 */
-#wrap #header .right #nav > ul > li:hover .sub {display: block;} /* 뒤의 내용은 부모로부터 상속받기 때문에 따로안씀*/
-#wrap #header .right #nav > ul > li:focus .sub {display: block;} /*focus : 키보드가 도달하면 보이게하라*/
+#wrap #header .right #nav > ul > li:hover .sub {display: block;} /* 뒤의 내용은 부모로부터 상속받기 때문에 따로안씀 */
+#wrap #header .right #nav > ul > li:focus .sub {display: block;} /* focus : 키보드가 도달하면 보이게하라 */
 #wrap #header .right #nav > ul > li .sub ul {width: 100%;}
 #wrap #header .right #nav > ul > li .sub ul li {width: 100%;}
 #wrap #header .right #nav > ul > li .sub ul li a {display: block; line-height: 30px; background: #fff; transition: all .1s;} /* 더이상 자식(자손)이 없어서 태그 따로 안해줌 */
