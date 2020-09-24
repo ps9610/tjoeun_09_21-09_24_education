@@ -1,60 +1,30 @@
 @charset "UTF-8";
 
-#wrap {width:100%;}
+#wrap {width:1000px;height:650px;border:1px solid #ccc;margin: 0 auto;}
 
-/* skip */
-#wrap #skip {width:100%;}
-#wrap #skip li {width:100%;}
-#wrap #skip li a {display:block;width:100%;line-height:0px;text-align:center;background:#000;color:#fff;font-size: 0px;}
-#wrap #skip li a:focus {line-height:50px;font-size:20px;}
+/* 헤더영역 (좌측) */
+#wrap #header {float:left;width:199px;height:650px;border-right:1px solid #ccc;}
+
+/* 로고 영역 */
+#wrap #header .top {width:199px;height:100px;}
+
+/* 네비게이션 영역 */
+#wrap #header .bottom {width:199px;height:549px;border-top:1px dotted #ccc;} /* 여백이 많은 곳에서 border설정 = 그래서 로고에서안하고 네비에서 보더설정함 */
 
 
-/* header */
-#wrap #header {width:100%;background:#f7f7f7;border-top:1px solid #ccc;border-bottom:1px solid #ccc;}
-#wrap #header .wrap {position:relative;width:1200px;margin:0 auto;border-left:1px solid #ccc;border-right:1px solid #ccc;}
-#wrap #header .wrap > ul {width:100%;}
-#wrap #header .wrap > ul > li:nth-child(1) {float:left;width: 180px;height:100px;} /* 좌측 */
-#wrap #header .wrap > ul > li:nth-child(2) {float:left;width:1019px;border-left:1px dotted #ccc;height:100px;} /* 우측 */
 
-/* 서브메뉴 배경 */
-#wrap #header .wrap > ul > li:nth-child(2) #nav  > ul > li .sub-bg {z-index:1;position:absolute;top:100px;left:0;width:100%;height:150px;background:#efefef;border-top:1px solid #ccc;border-bottom:1px solid #ccc;}
+/* 메인, 푸터영역 (우측) */
+#wrap #right  {float:left;width:800px;height:650px;} /* #c99 = 임시배경색(윤곽보려고) */
 
-/* 네비게이션 */
-#wrap #header .wrap > ul > li:nth-child(2) #nav {width:100%;} 
-#wrap #header .wrap > ul > li:nth-child(2) #nav > ul {float:right;padding:55px 20px 0 0;}
-#wrap #header .wrap > ul > li:nth-child(2) #nav > ul > li {float:left;width:175px;height:45px;border-left:1px solid #ccc;border-top:1px solid #ccc;}
-#wrap #header .wrap > ul > li:nth-child(2) #nav > ul > li:nth-child(4) {border-right:1px solid #ccc;}
+/* 메인영역 */
+#wrap #right #main {width:100%;height:549px;border-bottom:1px solid #ccc;}
+#wrap #right #main #section1 {width:100%;height:350px;}
+#wrap #right #main #section2 {widows:100%;height:198px;border-top:1px solid #ccc;}
+#wrap #right #main #section2 > ul {width:100%;}
+#wrap #right #main #section2 > ul > li {float:left;height:198px;}
+#wrap #right #main #section2 > ul > li:nth-child(1) {width:265.6666667px;border-right:1px dotted #ccc;}
+#wrap #right #main #section2 > ul > li:nth-child(2) {width:265.6666667px;border-right:1px dotted #ccc;}
+#wrap #right #main #section2 > ul > li:nth-child(3) {width:266.6666667px;}
 
-/* main-btn */
-#wrap #header .wrap > ul > li:nth-child(2) #nav > ul > li > a {display:block;line-height:45px;background:#fff;text-align:center;}
-#wrap #header .wrap > ul > li:nth-child(2) #nav > ul > li > a:hover {display:block;background:#ddd;color:#000;}
-
-/* sub-btn */
-#wrap #header .wrap > ul > li:nth-child(2) #nav  > ul > li .sub {position:relative;z-index:2;width:100%;}
-#wrap #header .wrap > ul > li:nth-child(2) #nav  > ul > li .sub ul {width:100%;}
-#wrap #header .wrap > ul > li:nth-child(2) #nav  > ul > li .sub ul li {width:100%;}
-
-#wrap #header .wrap > ul > li:nth-child(2) #nav  > ul > li .sub ul li a {display:block;line-height:35px;text-align:center;background:transparent;}
-#wrap #header .wrap > ul > li:nth-child(2) #nav  > ul > li .sub ul li a:hover {background: #aaa;}
-
-/* main */
-#wrap #main {width:1200px;margin:0 auto;border-left:1px solid #ccc;border-right:1px solid #ccc;}
-#wrap #main #section1 {width: 100%; height: 300px; background:#fff;border-bottom:1px solid #ccc;}   
-#wrap #main #section2 {width: 100%;}
-#wrap #main #section2 > ul {width:100%;}
-#wrap #main #section2 > ul > li {float:left;height:200px;}
-#wrap #main #section2 > ul > li:nth-child(1) {width:399px;border-right:1px dotted #ccc;}
-#wrap #main #section2 > ul > li:nth-child(2) {width:399px;border-right:1px dotted #ccc;}
-#wrap #main #section2 > ul > li:nth-child(3) {width:400px;}
-  
-
-/* footer */
-#wrap #footer {width:100%;height:100px;background:#f7f7f7;border-top:1px solid #ccc;border-bottom:1px solid #ccc;}
-#wrap #footer .wrap {width:1200px;margin: 0 auto;border-left:1px solid #ccc;border-right:1px solid #ccc;}
-#wrap #footer .wrap > ul {width: 100%;}
-#wrap #footer .wrap > ul > li:nth-child(1) {float:left;width:1019px;height:100px;border-right:1px dotted #ccc;}
-#wrap #footer .wrap > ul > li:nth-child(2) {float:left;width: 180px;}
-#wrap #footer .wrap > ul > li:nth-child(2) ul {width:100%;}
-#wrap #footer .wrap > ul > li:nth-child(2) ul li {width:100%;}
-#wrap #footer .wrap > ul > li:nth-child(2) ul li:nth-child(1) {height:49px;border-bottom:1px dotted #ccc;}
-#wrap #footer .wrap > ul > li:nth-child(2) ul li:nth-child(2) {height:50px;} 
+/* 푸터영역 */
+#wrap #right #footer {width:100%;height:100px;}
