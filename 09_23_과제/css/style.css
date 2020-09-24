@@ -1,22 +1,22 @@
 @charset "UTF-8";
 
-#wrap {width: 100%;}
+#wrap {width:100%;}
 
-#wrap #skip {width: 100%;}
-#wrap #skip li {width: 100%;}
-#wrap #skip li a {display: block; width: 100%; font-size: 0px; line-height: 0px; background: #000; color: #fff;}
-#wrap #skip li a:focus {font-size: 20px; line-height: 50px;} 
+#wrap #skip {width:100%;}
+#wrap #skip li {width:100%;}
+#wrap #skip li a {display:block;width:100%;font-size:0px;line-height:0px;background:#000;color: #fff;}
+#wrap #skip li a:focus {font-size:20px;line-height:50px;} 
 
 /* header */
-#wrap #header {width:100%;background:#ffefa0;}
-#wrap #header #hwrap {position:relative;width:1200px;height:100px;margin: 0 auto;}
+#wrap #header {width:100%;background:#ffefa0;border-top:1px solid #000;border-bottom:1px solid #000;}
+#wrap #header #hwrap {position:relative;width:1200px;height:100px;margin: 0 auto;border-left:1px solid #000;border-right:1px solid #000;}
 #wrap #header #hwrap > ul {width:100%;}
 #wrap #header #hwrap > ul > li {float:left;width:100%;height:100px;}
-#wrap #header #hwrap > ul > li:nth-child(1) {width: 180px; background: #ac4b1c;}
-#wrap #header #hwrap > ul > li:nth-child(2) {width: 1020px; background: #ffd57e;}
+#wrap #header #hwrap > ul > li:nth-child(1) {width: 180px;background:#ac4b1c;}
+#wrap #header #hwrap > ul > li:nth-child(2) {width:1019px;border-left:1px solid #000;background:#ffd57e;}
 
 /* nav-sub-bg */
-#wrap #header #hwrap > ul > li:nth-child(2) #nav > ul > li .sub-bg {position: absolute; z-index: 1; width:100%; height:300px; left:0; background: #eea;}
+#wrap #header #hwrap > ul > li:nth-child(2) #nav > ul > li .sub-bg {position:absolute;z-index:1;width:100%;height:300px;left:0;background:#eea;border-top:1px solid #000;border-bottom:1px solid #000;}
 
 /* nav */
 #wrap #header #hwrap > ul > li:nth-child(2) #nav {width: 100%;}
@@ -36,25 +36,25 @@
 
 
 /* main */
-#wrap #main {width:1200px;height:500px;margin: 0 auto;}
+#wrap #main {width:1200px;height:500px;margin: 0 auto;border-left:1px solid #000;border-right:1px solid #000;}
 #wrap #main #section1 {width:100%;height:300px;}
 #wrap #main #section2 {width:100%;height:200px;}
 #wrap #main #section2 > ul {width:100%;}
-#wrap #main #section2 > ul > li {float:left;width:400px;height:200px;}
-#wrap #main #section2 > ul > li:nth-child(1) {background:#edc988;}
-#wrap #main #section2 > ul > li:nth-child(2) {background:#ea907a;}
-#wrap #main #section2 > ul > li:nth-child(3) {background:#f4f7c5;}
+#wrap #main #section2 > ul > li {float:left;height:200px;}
+#wrap #main #section2 > ul > li:nth-child(1) {width:400px;background:#edc988;}
+#wrap #main #section2 > ul > li:nth-child(2) {width:399px;border-left:1px dotted #000;background:#ea907a;}
+#wrap #main #section2 > ul > li:nth-child(3) {width:399px;border-left:1px dotted #000;background:#f4f7c5;}
 
 
 
 /* footer */
-#wrap #footer {width: 100%; height:100px; background: #f4ebc1;}
-#wrap #footer #fwrap {width: 1200px; margin: 0 auto;}
-#wrap #footer #fwrap > ul {width: 100%;}
-#wrap #footer #fwrap > ul > li {width: 100%;}
-#wrap #footer #fwrap > ul > li:nth-child(1) {float:left; width: 1020px; height: 100px; background: #f2a07b;}
-#wrap #footer #fwrap > ul > li:nth-child(2) {float:left; width:180px;}
-#wrap #footer #fwrap > ul > li:nth-child(2) ul {width: 100%;}
-#wrap #footer #fwrap > ul > li:nth-child(2) ul li {width: 100%; height: 50px;}
-#wrap #footer #fwrap > ul > li:nth-child(2) ul li:nth-child(1) {background: #cbaf87;}
-#wrap #footer #fwrap > ul > li:nth-child(2) ul li:nth-child(2) {background: #ff7e67;}
+#wrap #footer {width:100%;height:100px;background:#f4ebc1;border-top:1px solid #000;border-bottom:1px solid #000;}
+#wrap #footer #fwrap {width:1200px;margin:0 auto;border-left:1px solid #000;}
+#wrap #footer #fwrap > ul {width:100%;}
+#wrap #footer #fwrap > ul > li {width:100%;}
+#wrap #footer #fwrap > ul > li:nth-child(1) {float:left;width:1019px;height:100px;background:#f2a07b;border-right:1px dotted #000;}
+#wrap #footer #fwrap > ul > li:nth-child(2) {float:left;width:180px;}
+#wrap #footer #fwrap > ul > li:nth-child(2) ul {width:100%;}
+#wrap #footer #fwrap > ul > li:nth-child(2) ul li {width:100%;height: 100px;}
+#wrap #footer #fwrap > ul > li:nth-child(2) ul li:nth-child(1) {width:179px;border-right:1px solid #000;height:49px;border-bottom:1px dotted #000;background: #cbaf87;}
+#wrap #footer #fwrap > ul > li:nth-child(2) ul li:nth-child(2) {width:179px;border-right:1px solid #000;height:50px;background: #ff7e67;}
