@@ -6,7 +6,7 @@
 #wrap #skip {width: 100%;}
 #wrap #skip li {width: 100%;}
 #wrap #skip li a {display: block; width: 100%; line-height: 0px; text-align: center; background: #000; color: #fff; font-size: 0px;}
-#wrap #skip li a:focus {line-height: 50px; font-size: 20px;}
+#wrap #skip li a:focus {line-height: 50px; font-size: 20px;} /*focus될 때 {}의 내용으로 바뀌게 하라는 명령*/
 
 
 /* header */

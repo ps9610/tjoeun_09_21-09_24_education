@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <title>웹표준 웹접근성 크로스브라우징 특수크로스브라우징 과제</title>
+    <title>웹표준 웹접근성 크로스브라우징 특수크로스브라우징</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!--기업체에 실제 납품할때는 기본 IE 8로 설정 
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"> -->
     <meta name="Viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Title" content="웹표준 웹접근성 크로스브라우징 특수크로스브라우징">
     <meta name="Publisher" content="프론트엔드 박소혜">
-    <meta name="Author-date" content="2020-09-23"> 
+    <meta name="Author-date" content="2020-09-24"> 
     <meta name="Author" content="Park-Sohye">
     <meta name="Copyright" content="Park-Sohye">
     <meta name="Keywords" content="웹표준, 웹접근성, 크로스브라우징, 특수크로스브라우징">
@@ -40,16 +42,18 @@
     <!--[if lte IE 7]>
         <link rel="stylesheet" type="text/css" href="./css/ie7.css">
     <![endif]-->
+ 
 </head>
 <body>
 <div id="wrap">
-    <ul id="skip">
+    <ul id="skip"> <!-- focus 할 때만 보임 -->
         <li><a href="#header">메뉴 바로가기</a></li>
         <li><a href="#main">메인 바로가기</a></li>
         <li><a href="#footer">하단 바로가기</a></li>
     </ul>
+<!-- header -->
     <header id="header">
-        <div id="hwrap">
+        <div class="wrap"> <!-- header자체가 100% 넓이기이 떄문에 다시 wrapping해서 사이즈에 제약을 둠 -->
             <ul class="fixedclear">
                 <li></li>
                 <li>
@@ -59,40 +63,40 @@
                                 <div class="sub-bg"></div>
                                 <div class="sub sub1">
                                     <ul>
-                                        <li><a href="#" class="sub-btn" title="SubMenu-1">SubMenu-1</a></li>
-                                        <li><a href="#" class="sub-btn" title="SubMenu-2">SubMenu-2</a></li>
-                                        <li><a href="#" class="sub-btn" title="SubMenu-3">SubMenu-3</a></li>
-                                        <li><a href="#" class="sub-btn" title="SubMenu-4">SubMenu-4</a></li>
+                                        <li><a href="#" class="sub-btn">SubMenu-1</a></li>
+                                        <li><a href="#" class="sub-btn">SubMenu-2</a></li>
+                                        <li><a href="#" class="sub-btn">SubMenu-3</a></li>
+                                        <li><a href="#" class="sub-btn">SubMenu-4</a></li>
                                     </ul>
                                 </div>
                             </li>
                             <li><a href="#" class="main-btn" title="MENU-2">MENU-2</a>
                                 <div class="sub sub2">
                                     <ul>
-                                        <li><a href="#" class="sub-btn" title="SubMenu-1">SubMenu-1</a></li>
-                                        <li><a href="#" class="sub-btn" title="SubMenu-2">SubMenu-2</a></li>
-                                        <li><a href="#" class="sub-btn" title="SubMenu-3">SubMenu-3</a></li>
-                                        <li><a href="#" class="sub-btn" title="SubMenu-4">SubMenu-4</a></li>
+                                        <li><a href="#" class="sub-btn">SubMenu-1</a></li>
+                                        <li><a href="#" class="sub-btn">SubMenu-2</a></li>
+                                        <li><a href="#" class="sub-btn">SubMenu-3</a></li>
+                                        <li><a href="#" class="sub-btn">SubMenu-4</a></li>
                                     </ul>
                                 </div>
                             </li>
                             <li><a href="#" class="main-btn" title="MENU-3">MENU-3</a>
                                 <div class="sub sub3">
                                     <ul>
-                                        <li><a href="#" class="sub-btn" title="SubMenu-1">SubMenu-1</a></li>
-                                        <li><a href="#" class="sub-btn" title="SubMenu-2">SubMenu-2</a></li>
-                                        <li><a href="#" class="sub-btn" title="SubMenu-3">SubMenu-3</a></li>
-                                        <li><a href="#" class="sub-btn" title="SubMenu-4">SubMenu-4</a></li>
+                                        <li><a href="#" class="sub-btn">SubMenu-1</a></li>
+                                        <li><a href="#" class="sub-btn">SubMenu-2</a></li>
+                                        <li><a href="#" class="sub-btn">SubMenu-3</a></li>
+                                        <li><a href="#" class="sub-btn">SubMenu-4</a></li>
                                     </ul>
                                 </div>
                             </li>
                             <li><a href="#" class="main-btn" title="MENU-4">MENU-4</a>
                                 <div class="sub sub4">
                                     <ul>
-                                        <li><a href="#" class="sub-btn" title="SubMenu-1">SubMenu-1</a></li>
-                                        <li><a href="#" class="sub-btn" title="SubMenu-2">SubMenu-2</a></li>
-                                        <li><a href="#" class="sub-btn" title="SubMenu-3">SubMenu-3</a></li>
-                                        <li><a href="#" class="sub-btn" title="SubMenu-4">SubMenu-4</a></li>
+                                        <li><a href="#" class="sub-btn">SubMenu-1</a></li>
+                                        <li><a href="#" class="sub-btn">SubMenu-2</a></li>
+                                        <li><a href="#" class="sub-btn">SubMenu-3</a></li>
+                                        <li><a href="#" class="sub-btn">SubMenu-4</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -102,19 +106,24 @@
             </ul>
         </div>
     </header>
+
+<!-- main -->
     <main id="main">
-        <section id="section1"></section>
+        <section id="section1"><h2 class="hide">섹션1</h2>
+        </section>
         <section id="section2">
             <ul class="fixedclear">
-                <li></li>
+                <li><h2 class="hide">섹션2</h2></li>
                 <li></li>
                 <li></li>
             </ul>
         </section>
     </main>
-    <footer id="footer" >
-        <div id="fwrap">
-            <ul class="fixedclear">
+
+<!-- footer     -->
+    <footer id="footer" class="fixedclear">
+        <div class="wrap">
+            <ul>
                 <li></li>
                 <li>
                     <ul>
@@ -125,7 +134,7 @@
             </ul>
         </div>
     </footer>
-</div>
 
+</div>
 </body>
 </html>
