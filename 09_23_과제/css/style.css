@@ -1,17 +1,22 @@
 @charset "UTF-8";
 
-#wrap {width: 100%; }
+#wrap {width: 100%;}
+
+#wrap #skip {width: 100%;}
+#wrap #skip li {width: 100%;}
+#wrap #skip li a {display: block; width: 100%; font-size: 0px; line-height: 0px; background: #000; color: #fff;}
+#wrap #skip li a:focus {font-size: 20px; line-height: 50px;} 
 
 /* header */
-#wrap #header { width: 100%;  background: red;}
-#wrap #header #hwrap  {width: 1200px; margin: 0 auto;}
-#wrap #header #hwrap > ul {position: relative; width: 100%;}
+#wrap #header {width: 100%;  background: #ffefa0;}
+#wrap #header #hwrap  {position: relative; width: 1200px; margin: 0 auto;}
+#wrap #header #hwrap > ul {width: 100%;}
 #wrap #header #hwrap > ul > li {float:left; width: 100%; height: 100px;}
-#wrap #header #hwrap > ul > li:nth-child(1) {width: 180px; background: violet;}
-#wrap #header #hwrap > ul > li:nth-child(2) {width: 1020px; background: tomato;}
+#wrap #header #hwrap > ul > li:nth-child(1) {width: 180px; background: #ac4b1c;}
+#wrap #header #hwrap > ul > li:nth-child(2) {width: 1020px; background: #ffd57e;}
 
 /* nav-sub-bg */
-#wrap #header #hwrap > ul > li:nth-child(2) #nav > ul > li .sub-bg {position: absolute; z-index: 1; width:100%; height: 300px; left:0; background: #fff;}
+#wrap #header #hwrap > ul > li:nth-child(2) #nav > ul > li .sub-bg {position: absolute; z-index: 1; width:100%; height:300px; left:0; background: #eea;}
 
 /* nav */
 #wrap #header #hwrap > ul > li:nth-child(2) #nav {width: 100%;}
@@ -26,30 +31,30 @@
 #wrap #header #hwrap > ul > li:nth-child(2) #nav > ul > li .sub {position:relative; z-index: 2; width: 100%;}
 #wrap #header #hwrap > ul > li:nth-child(2) #nav > ul > li .sub > ul {width: 100%;}
 #wrap #header #hwrap > ul > li:nth-child(2) #nav > ul > li .sub > ul >li {width: 100%; text-align:center;}
-#wrap #header #hwrap > ul > li:nth-child(2) #nav > ul > li .sub > ul >li > a {display:block; line-height: 45px; background: #fff; transition: all .1s;}
+#wrap #header #hwrap > ul > li:nth-child(2) #nav > ul > li .sub > ul >li > a {display:block; line-height: 45px; background: #eba; transition: all .1s;}
 #wrap #header #hwrap > ul > li:nth-child(2) #nav > ul > li .sub > ul >li > a:hover {background: #000; color: #fff;}
 
 
 /* main */
-#wrap #main {width: 1200px; height: 500px; background: yellow; margin: 0 auto;}
+#wrap #main {width: 1200px; margin: 0 auto;}
 #wrap #main #section1 {width: 100%; height: 300px; background: #9e9;}
 #wrap #main #section2 {width: 100%;}
 #wrap #main #section2 ul {width: 100%;}
 #wrap #main #section2 ul li {float: left; width:400px; height: 200px;}
-#wrap #main #section2 > ul >li:nth-child(1) { background: #e99;}
-#wrap #main #section2 > ul >li:nth-child(2) { background: #ce9;}
-#wrap #main #section2 > ul >li:nth-child(3) { background: #df1;}
+#wrap #main #section2 > ul >li:nth-child(1) { background: #edc988;}
+#wrap #main #section2 > ul >li:nth-child(2) { background: #ea907a;}
+#wrap #main #section2 > ul >li:nth-child(3) { background: #f4f7c5;}
 
 
 
 /* footer */
-#wrap #footer {width: 100%; background: blue;}
+#wrap #footer {width: 100%; height:100px; background: #f4ebc1;}
 #wrap #footer #fwrap {width: 1200px; margin: 0 auto;}
 #wrap #footer #fwrap > ul {width: 100%;}
 #wrap #footer #fwrap > ul > li {width: 100%;}
-#wrap #footer #fwrap > ul > li:nth-child(1) {float:left; width: 1020px; height: 100px; background: #c5c;}
-#wrap #footer #fwrap > ul > li:nth-child(2) {float:left; width:180px; background: #a7a;}
+#wrap #footer #fwrap > ul > li:nth-child(1) {float:left; width: 1020px; height: 100px; background: #f2a07b;}
+#wrap #footer #fwrap > ul > li:nth-child(2) {float:left; width:180px;}
 #wrap #footer #fwrap > ul > li:nth-child(2) ul {width: 100%;}
 #wrap #footer #fwrap > ul > li:nth-child(2) ul li {width: 100%; height: 50px;}
-#wrap #footer #fwrap > ul > li:nth-child(2) ul li:nth-child(1) {background: #7d7;}
-#wrap #footer #fwrap > ul > li:nth-child(2) ul li:nth-child(2) {background: #7a7;}
+#wrap #footer #fwrap > ul > li:nth-child(2) ul li:nth-child(1) {background: #cbaf87;}
+#wrap #footer #fwrap > ul > li:nth-child(2) ul li:nth-child(2) {background: #ff7e67;}

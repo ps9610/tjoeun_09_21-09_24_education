@@ -3,7 +3,7 @@
 <head>
     <title>웹표준 웹접근성 크로스브라우징 특수크로스브라우징 과제</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="Viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Title" content="웹표준 웹접근성 크로스브라우징 특수크로스브라우징">
     <meta name="Publisher" content="프론트엔드 박소혜">
@@ -43,7 +43,11 @@
 </head>
 <body>
 <div id="wrap">
-
+    <ul id="skip">
+        <li><a href="#header">메뉴 바로가기</a></li>
+        <li><a href="#main">메인 바로가기</a></li>
+        <li><a href="#footer">하단 바로가기</a></li>
+    </ul>
     <header id="header">
         <div id="hwrap">
             <ul class="fixedclear">
@@ -102,14 +106,14 @@
     <main id="main">
         <section id="section1"></section>
         <section id="section2">
-            <ul>
+            <ul class="fixedclear">
                 <li></li>
                 <li></li>
                 <li></li>
             </ul>
         </section>
     </main>
-    <footer id="footer">
+    <footer id="footer" >
         <div id="fwrap">
             <ul class="fixedclear">
                 <li></li>
