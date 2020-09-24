@@ -8,9 +8,24 @@
 /* 로고 영역 */
 #wrap #header .top {width:199px;height:100px;}
 
-/* 네비게이션 영역 */
+/* 네비게이션 영역 - 메인버튼 */
 #wrap #header .bottom {width:199px;height:549px;border-top:1px dotted #ccc;} /* 여백이 많은 곳에서 border설정 = 그래서 로고에서안하고 네비에서 보더설정함 */
+#wrap #header .bottom .nav {width:100%;}
+#wrap #header .bottom .nav > ul {margin:15px 15px 0 15px;} 
+#wrap #header .bottom .nav > ul > li {border-bottom:1px solid #ccc;border-left:1px solid #ccc;border-right:1px solid #ccc;} /* 보더는 항상 부모에서 */
+#wrap #header .bottom .nav > ul > li:nth-child(1) {border-top:1px solid #ccc;}
+#wrap #header .bottom .nav > ul > li > a {display:block;width:100%;line-height:45px;text-align:center;font-size:14px;color:#333;background:#fff;}
+#wrap #header .bottom .nav > ul > li > a:hover{background:#000;color:#fff;}
 
+/* 네비-서브버튼 */
+#wrap #header .bottom .nav > ul > li .sub {display:none;border-top:1px solid #ccc;}
+#wrap #header .bottom .nav > ul > li:hover .sub {display:block;}
+
+#wrap #header .bottom .nav > ul > li .sub > ul {width:100%;}
+#wrap #header .bottom .nav > ul > li .sub > ul > li {width:100%;border-bottom:1px dotted #ccc;}
+#wrap #header .bottom .nav > ul > li .sub > ul > li > a {display:block;width:100%;line-height:35px;text-align:center;color:#444;background:#f9f9f9;font-size:13px;}
+#wrap #header .bottom .nav > ul > li .sub > ul > li > a:hover {background:#000; color:#fff;}
+/* 서브가 열렸을 때만 라인이 보이게하기 */
 
 
 /* 메인, 푸터영역 (우측) */
