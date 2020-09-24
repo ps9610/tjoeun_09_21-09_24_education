@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+#wrap {width:1000px;height:650px;border:1px solid #000;margin:0 auto;}
+
+#wrap #header {float:left;width:199px;height:650px;border-right:1px solid #000;}
+#wrap #header .header1 {width:199px;height:100px;}
+#wrap #header .header2 {width:199px;height:549px;border-top:1px solid #000;}
+
+
+#wrap #main {float:left;width:800px;height:549px;border-bottom:1px solid #000;}
+#wrap #main #section1 {width:800px;height:350px;}
+#wrap #main #section2 {width:800px;height:249px;border-top:1px solid #000;}
+
+
+#wrap #footer {width:800px;height:100px;}
+
