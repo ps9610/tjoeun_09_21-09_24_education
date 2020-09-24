@@ -17,23 +17,24 @@
 #wrap #header .wrap > ul > li:nth-child(2) {float:left;width:1019px;border-left:1px dotted #ccc;height:100px;} /* 우측 */
 
 /* 서브메뉴 배경 */
-#wrap #header .wrap > ul > li:nth-child(2) #nav  > ul > li .sub-bg {z-index:1;position:absolute;top:100px;left:0;width:100%;height:150px;background:#ddd;}
+#wrap #header .wrap > ul > li:nth-child(2) #nav  > ul > li .sub-bg {z-index:1;position:absolute;top:100px;left:0;width:100%;height:150px;background:#efefef;border-top:1px solid #ccc;border-bottom:1px solid #ccc;}
 
 /* 네비게이션 */
-#wrap #header .wrap > ul > li:nth-child(2) #nav {width: 100%;} 
-#wrap #header .wrap > ul > li:nth-child(2) #nav > ul {float:right; padding: 55px 20px 0 0;}
-#wrap #header .wrap > ul > li:nth-child(2) #nav > ul > li {float: left; width: 175px; height: 45px;}
+#wrap #header .wrap > ul > li:nth-child(2) #nav {width:100%;} 
+#wrap #header .wrap > ul > li:nth-child(2) #nav > ul {float:right;padding:55px 20px 0 0;}
+#wrap #header .wrap > ul > li:nth-child(2) #nav > ul > li {float:left;width:175px;height:45px;border-left:1px solid #ccc;border-top:1px solid #ccc;}
+#wrap #header .wrap > ul > li:nth-child(2) #nav > ul > li:nth-child(4) {border-right:1px solid #ccc;}
 
 /* main-btn */
-#wrap #header .wrap > ul > li:nth-child(2) #nav > ul > li > a {display: block; line-height: 45px; background: #fff; text-align: center;}
-#wrap #header .wrap > ul > li:nth-child(2) #nav > ul > li > a:hover {display: block; background: #ddd; color: #000;}
+#wrap #header .wrap > ul > li:nth-child(2) #nav > ul > li > a {display:block;line-height:45px;background:#fff;text-align:center;}
+#wrap #header .wrap > ul > li:nth-child(2) #nav > ul > li > a:hover {display:block;background:#ddd;color:#000;}
 
 /* sub-btn */
-#wrap #header .wrap > ul > li:nth-child(2) #nav  > ul > li .sub {position: relative; z-index: 2; width: 100%;}
-#wrap #header .wrap > ul > li:nth-child(2) #nav  > ul > li .sub ul {width: 100%;}
-#wrap #header .wrap > ul > li:nth-child(2) #nav  > ul > li .sub ul li {width: 100%;}
+#wrap #header .wrap > ul > li:nth-child(2) #nav  > ul > li .sub {position:relative;z-index:2;width:100%;}
+#wrap #header .wrap > ul > li:nth-child(2) #nav  > ul > li .sub ul {width:100%;}
+#wrap #header .wrap > ul > li:nth-child(2) #nav  > ul > li .sub ul li {width:100%;}
 
-#wrap #header .wrap > ul > li:nth-child(2) #nav  > ul > li .sub ul li a {display: block; line-height: 35px; text-align: center; background: transparent;}
+#wrap #header .wrap > ul > li:nth-child(2) #nav  > ul > li .sub ul li a {display:block;line-height:35px;text-align:center;background:transparent;}
 #wrap #header .wrap > ul > li:nth-child(2) #nav  > ul > li .sub ul li a:hover {background: #aaa;}
 
 /* main */
