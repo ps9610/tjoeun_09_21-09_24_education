@@ -4,13 +4,22 @@
 
 #wrap #header {float:left;width:199px;height:650px;border-right:1px solid #000;}
 #wrap #header .header1 {width:199px;height:100px;}
-#wrap #header .header2 {width:199px;height:549px;border-top:1px solid #000;}
+#wrap #header .header2 {width:199px;height:549px;border-top:1px dotted #000;}
 
 
 #wrap #main {float:left;width:800px;height:549px;border-bottom:1px solid #000;}
 #wrap #main #section1 {width:800px;height:350px;}
-#wrap #main #section2 {width:800px;height:249px;border-top:1px solid #000;}
+#wrap #main #section2 {width:800px;height:199px;border-top:1px solid #000;}
+#wrap #main #section2 > ul {width: 100%;}
+#wrap #main #section2 > ul > li {float:left;height:199px;}
+#wrap #main #section2 > ul > li:nth-child(1) {width: 266.6666667px;}
+#wrap #main #section2 > ul > li:nth-child(2) {width: 265.6666667px;border-left:1px dotted #000;}
+#wrap #main #section2 > ul > li:nth-child(3) {width: 265.6666667px;border-left:1px dotted #000;}
 
-
-#wrap #footer {width:800px;height:100px;}
-
+#wrap #footer {float:left;width:800px;height:100px;}
+#wrap #footer .footer1 {float:left;width:200px;height:100%;}
+#wrap #footer .footer2 {float:left;width:599px;height:100%;border-left:1px dotted #000;}
+#wrap #footer .footer2 ul {width:100%;}
+#wrap #footer .footer2 ul li {width:100%;}
+#wrap #footer .footer2 ul li:nth-child(1) {height:50px;}
+#wrap #footer .footer2 ul li:nth-child(2) {height:49px;border-top:1px dotted #000;}
