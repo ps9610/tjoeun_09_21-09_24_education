@@ -4,8 +4,7 @@
     <title>웹표준 웹접근성 크로스브라우징 특수크로스브라우징</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <!--기업체에 실제 납품할때는 기본 IE 8로 설정 
-        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"> -->
     <meta name="Viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Title" content="웹표준 웹접근성 크로스브라우징 특수크로스브라우징">
     <meta name="Publisher" content="프론트엔드 박소혜">
@@ -46,18 +45,19 @@
 </head>
 <body>
 <div id="wrap">
-    <ul id="skip"> <!-- focus 할 때만 보임 -->
+    <ul id="skip"> 
         <li><a href="#header">메뉴 바로가기</a></li>
         <li><a href="#main">메인 바로가기</a></li>
         <li><a href="#footer">하단 바로가기</a></li>
     </ul>
+
 <!-- header -->
     <header id="header">
-        <div class="wrap"> <!-- header자체가 100% 넓이기이 떄문에 다시 wrapping해서 사이즈에 제약을 둠 -->
+        <div class="wrap"> 
             <ul class="fixedclear">
                 <li></li>
                 <li>
-                    <nav id="nav">
+                    <nav id="nav" class="fixedclear">
                         <ul class="fixedclear">
                             <li><a href="#" class="main-btn" title="MENU-1">MENU-1</a>
                                 <div class="sub-bg"></div>
@@ -120,10 +120,10 @@
         </section>
     </main>
 
-<!-- footer     -->
-    <footer id="footer" class="fixedclear">
+<!-- footer -->
+    <footer id="footer">
         <div class="wrap">
-            <ul>
+            <ul class="fixedclear">
                 <li></li>
                 <li>
                     <ul>

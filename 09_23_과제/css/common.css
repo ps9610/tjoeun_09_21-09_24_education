@@ -2,7 +2,7 @@
 
 * {margin: 0; padding: 0;}
 html, body {width: 100%; height: 100%;}
-body {background: #fff;}
+body {background: #e1e1e1;}
 .fixedclear:after {content: ""; display: block; clear: both;}
 header, main, footer, section, nav {display: block;}
 /* - 시멘틱태그 특히 main은 폴리필 전혀 안돼서 깨지니까 꼭 잡아주기 */
