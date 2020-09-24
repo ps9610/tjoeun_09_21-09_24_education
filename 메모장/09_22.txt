@@ -1,0 +1,65 @@
+-10시-
+1. id는 카멜표기법
+2. class는 스테이크표기법
+3. css할 때 DOM트리 구조->부모/자손 태그 띄어서 구분 잘 하기
+4. img폴더 네이밍 = image라고 쓰는사람도잇음 근데 img가 권장사항
+5. <link> 의미 : 외부 파일을 가져온다.
+6. common.css = reset.css ->초기화시켜주는 css
+7. html안의 모든 tag로 작성된 요소로 작업 = 모델링
+    Model(HTML5) -> View(CSS3) ->contriler(Javascript(DOM/BOM)&jquery)
+    👆MVC Pattern(Modelling)
+
+-11시-
+1. 문장부호 <는  &lt;
+2. if = 만약 = (조건이 있다.)
+   구성 =	  if(){
+	  }
+3. 조건 주석문 실행되는거는 스크립트, 스타일
+	구성 = <!--[if IE 9]>
+		<style> h1 {color: white;}
+		<![endif]-->
+4. 모든 태그는 넓이는 잇지만 높이는 없다.
+5. 폴리피 : 플러그인을 사용하지 않고 직접 호환하기 위하여 폴리피사용함
+
+-12시-
+1.rgb : 1로갈수록진한색, 9로갈수록연한색
+2.큰 단위는 id로 나눠
+3.자바스크립트는 최상위부터 입력
+(최상위)docu (상위)html (그담상위)body
+
+-14시-
+1.  <meta http-equiv="X-UA Compatible" content="IE-8">
+	(브라우저 모드 : 쿼크모드(정상버전->하위모드로) / 표준모드)
+    <meta http-equiv="X-UA Compatible" content="IE=EmulateIE8">
+	->이게 표준
+
+
+-15시-
+1. <head>는 환경설정
+/* 774936 8a5a44 9d6b53 b07d62 c38e70 cd9777 d69f7e deab90 e6b8a2 edc4b3 */
+2. VSC 확장 프로그램: live server = 서버에서 파일 실행
+
+-16시-
+1. nav 가로 170px 세로 45px - 포지션 이용할거임
+2. 포지션(이참에 확실하게 잡자) - 부모태그로 사용할수있음(감싸는것은 모두 부모ㅇㅋ)
+	-relative = top=0, left=0이 디폴트(일반 블록태그랑 똑같, z-index사용가능)(블록단위 = 높이넓이를차지하면서 따라오는 내용을 무시하지 않음), 
+	-absolute -top 또는 bottom (x좌표), left 또는 right(y좌표) 값 입력가능(아무데나띄울수있음),
+	- fixed(아무데나띄울수있음) = 인라인 -> 내용을 덮거나 뒤로 묻혀버림)
+3. z-index : 깊이, 앞-뒤를 설정, 1 2 3 4 5 ...이고 숫자가 클수록 눈에 보여짐
+4.                 <ul> <!-- 목록태그, 홈페이지 제작시 가장 많이 씀(div만큼 씀),ul->li(ok) ul->div(x) ul->li->div(o) -->
+                    <li> <!-- li는 자식요소로 모든 요소에 대한 제한이 없기 때문에 div가 올 수 있고 아무거나 올 수 있음 -->
+
+                    </li>
+                </ul>
+ = 순서없는 목록 상자 [블럭요소]
+5. a = (링크문자)앵커문자 Anchor [인라인요소]
+6 #wrap #main #section2 .right #nav > ul {} 
+/* nav 바로 밑에 ul만을 택한다.=nav의 자식만(자손포함안됨) 
+(클래스도 아이디도 없는 경우) */
+/* #wrap #main #section2 .right #nav > ul > li [a.main.btn] = 종속 클래스 */
+
+-17시-
+1.{padding-top: 27.5px; padding-right: 27.5px;}와 같이 패딩을 여러개 쓸 땐
+시계방향으로 쓴다.
+
+-18시-
