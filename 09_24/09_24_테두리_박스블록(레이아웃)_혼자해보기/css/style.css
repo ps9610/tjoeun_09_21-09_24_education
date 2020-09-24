@@ -5,6 +5,10 @@
 #wrap #header {float:left;width:199px;height:650px;border-right:1px solid #000;}
 #wrap #header .header1 {width:199px;height:100px;}
 #wrap #header .header2 {width:199px;height:549px;border-top:1px dotted #000;}
+#wrap #header .header2 #nav {}
+#wrap #header .header2 #nav > ul {}
+#wrap #header .header2 #nav > ul >li {}
+#wrap #header .header2 #nav > ul >li > a {}
 
 
 #wrap #main {float:left;width:800px;height:549px;border-bottom:1px solid #000;}
