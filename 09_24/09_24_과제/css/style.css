@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
-.wrapping {width:100px;height:100px;background:#aaa;margin: 200px auto 0 auto; border-left:5px solid #000;border-right:5px solid #000;border-top:5px solid #000;border-bottom:5px solid #000;}
+.wrap {width:500px; height: 500px;margin: 200px auto 0 auto; }
+.wrapping {width:100px;height:100px;background:#aaa;border-left:5px solid #000;border-right:5px solid #000;border-top:5px solid #000;border-bottom:5px solid #000;}
 
 /* skip */
 /* #wrap #skip {width:100%;}
